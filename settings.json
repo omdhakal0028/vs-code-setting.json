@@ -1,26 +1,26 @@
 {
     "code-runner.runInTerminal": true,
-    "workbench.colorTheme": "Tokyo Night AltSynt"
-
+    "workbench.colorTheme": "flexoki-light",
     "keyboard.dispatch": "keyCode",
 
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["H"],
-            "commands": ["workbench.action.previousEditor"]
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
         },
         {
             "before": ["L"],
-            "commands": ["workbench.action.nextEditor"]
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
         }
-    ]
+    ],
 
     "code-runner.executorMap": {
-    "cpp": "mkdir -p \"$dir/bin\" && cd \"$dir\" && g++ -std=c++20 \"$fileName\" -o \"bin/$fileNameWithoutExt\" && ./bin/$fileNameWithoutExt"
- }
+        "cpp": "mkdir -p \"$dir/bin\" && cd \"$dir\" && g++ -std=c++20 \"$fileName\" -o \"bin/$fileNameWithoutExt\" && ./bin/$fileNameWithoutExt"
+    },
 
- "vim.useSystemClipboard": true
-
-
-
+    "vim.useSystemClipboard": true
 }
